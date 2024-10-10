@@ -1,6 +1,8 @@
 package Jackson_Databind;
 
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 final class Dignitary {
@@ -8,7 +10,8 @@ final class Dignitary {
 	private final List<String> knownFor;
 	private final List<Award> awards;
 	
-	public Dignitary(@JsonProperty("name") String name,
+	@JsonCreator
+	private Dignitary(@JsonProperty("name") String name,
 			@JsonProperty("knownFor") List<String> knownFor, 
 			@JsonProperty("awards") List<Award> awards){
 		this.name = name;

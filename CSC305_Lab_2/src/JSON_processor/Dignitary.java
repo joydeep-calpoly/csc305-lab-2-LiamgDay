@@ -1,4 +1,5 @@
 package JSON_processor;
+
 import java.util.List;
 
 import org.json.JSONArray;
@@ -8,7 +9,7 @@ final class Dignitary {
 	private final JSONArray knownFor;
 	private final List<Award> awards;
 	
-	public Dignitary(String name, JSONArray knownFor, List<Award> awards) {
+	Dignitary(String name, JSONArray knownFor, List<Award> awards) {
 		this.name = name;
 		this.knownFor = knownFor;
 		this.awards = awards;

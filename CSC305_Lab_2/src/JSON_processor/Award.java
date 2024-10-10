@@ -2,10 +2,10 @@ package JSON_processor;
 
 
 final class Award {
-	private String title;
-	private int year;
+	private final String title;
+	private final int year;
 	
-	public Award(String title, int year) {
+	Award(String title, int year) {
 		this.title = title;
 		this.year = year;
 	}
